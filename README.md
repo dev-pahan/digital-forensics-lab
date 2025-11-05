@@ -1,10 +1,10 @@
-### Digital Forensics Lab  
+## Digital Forensics Lab  
 
 This repository documents my hands-on exercises and case analyses in **digital forensics**, focusing on evidence acquisition, imaging, artifact recovery, and reporting.  
 
 It forms part of my coursework and personal projects in the **BSc Cyber Security** program at **ECU**, showcasing the use of professional forensic tools and methodologies for real-world investigation scenarios.  
 
-## Tools & Environments  
+### Tools & Environments  
 - **OSForensics** – forensic imaging, file carving, and artifact recovery  
 - **Autopsy** – case management, timeline analysis, and file system reconstruction  
 - **Kali Linux / Ubuntu** – command-line hashing, forensic utilities, and evidence verification  
@@ -14,14 +14,13 @@ It forms part of my coursework and personal projects in the **BSc Cyber Security
 
 ## Case Workflow Overview  
 
-### 🔹 **1. Evidence Acquisition & Imaging**
+### 🔹 1. Evidence Acquisition & Imaging
 - Acquired a **forensic disk image (.E01)** from a simulated Windows 10 system using **OSForensics**.  
 - Ensured proper **chain of custody** documentation before analysis.  
 - Verified image integrity using multiple hash algorithms:  
-  ```bash
+  ```
   md5sum disk_image.E01
   sha256sum disk_image.E01
-
 
 - Stored hash results in a separate verification log file.
 
@@ -45,17 +44,17 @@ It forms part of my coursework and personal projects in the **BSc Cyber Security
 
 - Extracted forensic timelines to map user activity over key timeframes.
 
-## Learnings:
+### Learnings:
 
 - How to correlate file modification times (MAC times) with system logs.
 
 - The importance of cross-referencing recovered files with user timestamps.
 
-### 🔹 3. Autopsy Investigation
+## 🔹 3. Autopsy Investigation
 
 - Imported the same .E01 image into Autopsy for deeper analysis.
 
-## Modules used:
+### Modules used:
 
 - Recent Activity Analyzer – found browser history, downloads, and cookies.
 
@@ -73,7 +72,7 @@ It forms part of my coursework and personal projects in the **BSc Cyber Security
 
 -  Screenshots of Autopsy modules are included in the autopsy/screenshots/ folder.
 
-### 🔹 4. File Hashing & Integrity Verification
+## 🔹 4. File Hashing & Integrity Verification
 
 - Used both Windows utilities and Linux CLI to compute and verify file hashes.
 
@@ -83,8 +82,7 @@ It forms part of my coursework and personal projects in the **BSc Cyber Security
 
 - openssl enc -aes-256-cbc -salt -in evidence.zip -out evidence.enc
 
-
-## Learnings:
+### Learnings:
 
 - How to perform forensic imaging and verification using professional tools.
 
