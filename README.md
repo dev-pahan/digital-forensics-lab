@@ -1,4 +1,4 @@
-### 🧩 Digital Forensics Lab  
+### Digital Forensics Lab  
 
 This repository documents my hands-on exercises and case analyses in **digital forensics**, focusing on evidence acquisition, imaging, artifact recovery, and reporting.  
 
@@ -23,7 +23,7 @@ It forms part of my coursework and personal projects in the **BSc Cyber Security
   sha256sum disk_image.E01
 
 
-Stored hash results in a separate verification log file.
+- Stored hash results in a separate verification log file.
 
 ## Artifacts and hash logs are stored in the evidence/ folder.
 
